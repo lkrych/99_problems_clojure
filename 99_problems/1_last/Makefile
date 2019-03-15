@@ -1,0 +1,2 @@
+run:
+	clj ./last.clj
