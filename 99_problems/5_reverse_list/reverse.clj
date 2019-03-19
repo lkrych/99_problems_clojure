@@ -1,5 +1,3 @@
-(defn rev [list]
-  (cond
-    (empty? list) nil
-    :else (concat (rev (rest list)) (first list))
-))
+(defn recursive-reverse [list]
+  (if (empty? list) []
+  (conj (recursive-reverse (rest list)) (first list))))
